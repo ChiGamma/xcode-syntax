@@ -1,4 +1,5 @@
-@import "colors";
+//@import "colors";
+@import "colors_DefaultPlus";
 
 // This defines all syntax variables that syntax themes must implement when they
 // include a syntax-variables.less file.
@@ -6,8 +7,10 @@
 // General colors
 @syntax-text-color: @textColor;
 @syntax-cursor-color: @textColor;
-@syntax-selection-color: lighten(@selectedTextBackgroundColor, 10%);
+@syntax-selection-color: lighten(@selectedTextBackgroundColor, 5%);
 @syntax-background-color: @textBackgroundColor;
+
+@cursor-line-color: #E8F2FF;
 
 // Guide colors
 @syntax-wrap-guide-color: @windowBackgroundColor;
