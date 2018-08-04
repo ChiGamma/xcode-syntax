@@ -87,7 +87,7 @@
     }
 
     .line.cursor-line {
-      background-color: @textBackgroundColor;
+      background-color: @cursor-line-color;
     }
   }
 }
@@ -98,13 +98,13 @@
 
 .editor .search-results .syntax--marker .region {
   background-color: @syntax-result-marker-color;
-  border: 1px solid @syntax-result-marker-color-selected;
+  border: 1px solid @syntax-result-marker-color;
   margin: -1px 0;
 }
 
 .editor .search-results .syntax--marker.current-result .region {
   background-color: @syntax-result-marker-color-selected;
-  border: 1px solid @syntax-result-marker-color;
+  border: 1px solid @syntax-result-marker-color-selected;
   margin: -1px 0;
 }
 
@@ -350,7 +350,7 @@
 }
 
 .bracket-matcher {
-  background-color: @findSelectedBackgroundColor;
+  background-color: @findBackgroundColor;
   border: none;
   -webkit-animation-name: flash;
   -webkit-animation-duration: 500ms;
